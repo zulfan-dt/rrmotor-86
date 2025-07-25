@@ -1,0 +1,153 @@
+/* Reset & font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* HERO SECTION */
+.hero {
+  background: url('https://via.placeholder.com/1200x600?text=Bengkel+Motor') center/cover no-repeat;
+  height: 100vh;
+  position: relative;
+}
+.hero .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+}
+.hero h1 {
+  font-size: 3rem;
+}
+.hero .btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background-color: #ff3d00;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background 0.3s;
+}
+.hero .btn:hover {
+  background-color: #dd2c00;
+}
+
+/* NAVBAR */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 15px 0;
+}
+.navbar ul li a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #ff3d00;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.navbar ul li a:hover {
+  color: #dd2c00;
+}
+
+/* SECTIONS */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #e53935;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* GALERI */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.gallery img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* FORMULIR */
+form {
+  margin-top: 30px;
+  max-width: 500px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+form input, form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+form button {
+  background-color: #ff3d00;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+form button:hover {
+  background-color: #e53935;
+}
+
+/* FOOTER */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 25px 10px;
+  margin-top: 40px;
+}
